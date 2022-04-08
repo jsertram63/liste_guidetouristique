@@ -26,7 +26,7 @@ extension SiteTouristiqueModel {
             coordonnes: CLLocationCoordinate2D(latitude: 48.6359541, longitude: -1.51146)
         ),
         SiteTouristiqueModel(
-            lieux: "Les Pyrénéés",
+            lieux: "Les Pyrénées",
             imageSites: "Pyrenees",
             link: "https://fr.wikipedia.org/wiki/Pyr%C3%A9n%C3%A9es",
             coordonnes: CLLocationCoordinate2D(latitude: 42.6982487, longitude: 0.4969969)

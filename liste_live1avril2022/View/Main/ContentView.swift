@@ -16,7 +16,7 @@ struct ContentView: View {
         TabView {
             SiteListeView()
                 .tabItem {
-                    Image("globe.europe.africa.fill")
+                    Image(systemName: "globe.europe.africa.fill")
                     Text("Guide")
                 }
             
@@ -37,5 +37,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            //.preferredColorScheme(.dark)
     }
 }
