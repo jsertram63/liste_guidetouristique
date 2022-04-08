@@ -9,14 +9,16 @@ import SwiftUI
 
 struct SiteListeView: View {
     
-    var siteDatas: [SiteTouristiqueModel]
+    var sites = siteData
+    
 
     
     var body: some View {
-        List(siteDatas){ siteCourant in
+        List(sites){ siteCourant in
             Text(siteCourant.titre)
             
         }
+        .listStyle(.plain)
     }
 }
 
