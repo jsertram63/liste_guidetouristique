@@ -12,6 +12,7 @@
 		37F3C95028003FC000BA9878 /* SitesItalieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3C94F28003FC000BA9878 /* SitesItalieDetailsView.swift */; };
 		37F3C95228003FEE00BA9878 /* SitesUKDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3C95128003FEE00BA9878 /* SitesUKDetailsView.swift */; };
 		37F3C9542800401A00BA9878 /* SitesUSADetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3C9532800401A00BA9878 /* SitesUSADetailsView.swift */; };
+		37F3C9582800438700BA9878 /* SiteListeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3C9572800438700BA9878 /* SiteListeView.swift */; };
 		8930C46427F6FFDE00B103C5 /* liste_live1avril2022App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8930C46327F6FFDE00B103C5 /* liste_live1avril2022App.swift */; };
 		8930C46627F6FFDE00B103C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8930C46527F6FFDE00B103C5 /* ContentView.swift */; };
 		8930C46827F6FFE100B103C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8930C46727F6FFE100B103C5 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		37F3C94F28003FC000BA9878 /* SitesItalieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitesItalieDetailsView.swift; sourceTree = "<group>"; };
 		37F3C95128003FEE00BA9878 /* SitesUKDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitesUKDetailsView.swift; sourceTree = "<group>"; };
 		37F3C9532800401A00BA9878 /* SitesUSADetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitesUSADetailsView.swift; sourceTree = "<group>"; };
+		37F3C9572800438700BA9878 /* SiteListeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteListeView.swift; sourceTree = "<group>"; };
 		8930C46027F6FFDE00B103C5 /* liste_live1avril2022.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = liste_live1avril2022.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8930C46327F6FFDE00B103C5 /* liste_live1avril2022App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = liste_live1avril2022App.swift; sourceTree = "<group>"; };
 		8930C46527F6FFDE00B103C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				8930C46527F6FFDE00B103C5 /* ContentView.swift */,
 				37F3C94B28003F4B00BA9878 /* GuideVoyagesPierricView.swift */,
+				37F3C9572800438700BA9878 /* SiteListeView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				8930C47327F7045600B103C5 /* SiteTouristiqueModel.swift in Sources */,
 				37F3C95228003FEE00BA9878 /* SitesUKDetailsView.swift in Sources */,
 				37F3C94E28003F9400BA9878 /* SitesFranceDetailsView.swift in Sources */,
+				37F3C9582800438700BA9878 /* SiteListeView.swift in Sources */,
 				37F3C95028003FC000BA9878 /* SitesItalieDetailsView.swift in Sources */,
 				37F3C9542800401A00BA9878 /* SitesUSADetailsView.swift in Sources */,
 				8930C46427F6FFDE00B103C5 /* liste_live1avril2022App.swift in Sources */,

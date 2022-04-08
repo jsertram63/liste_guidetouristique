@@ -14,6 +14,12 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
+            SiteListeView()
+                .tabItem {
+                    Image("globe.europe.africa.fill")
+                    Text("Guide")
+                }
+            
             GuideVoyagePierricView(
                 listeSitesFrance: SiteTouristiqueModel.listeSitesFrance,
                 listeSitesItalie: SiteTouristiqueModel.listeSitesItalie,
