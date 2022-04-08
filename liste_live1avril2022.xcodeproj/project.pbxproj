@@ -7,24 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37F3C94C28003F4B00BA9878 /* GuideVoyagesPierricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3C94B28003F4B00BA9878 /* GuideVoyagesPierricView.swift */; };
+		37F3C94E28003F9400BA9878 /* SitesFranceDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3C94D28003F9400BA9878 /* SitesFranceDetailsView.swift */; };
+		37F3C95028003FC000BA9878 /* SitesItalieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3C94F28003FC000BA9878 /* SitesItalieDetailsView.swift */; };
+		37F3C95228003FEE00BA9878 /* SitesUKDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3C95128003FEE00BA9878 /* SitesUKDetailsView.swift */; };
+		37F3C9542800401A00BA9878 /* SitesUSADetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3C9532800401A00BA9878 /* SitesUSADetailsView.swift */; };
 		8930C46427F6FFDE00B103C5 /* liste_live1avril2022App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8930C46327F6FFDE00B103C5 /* liste_live1avril2022App.swift */; };
 		8930C46627F6FFDE00B103C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8930C46527F6FFDE00B103C5 /* ContentView.swift */; };
 		8930C46827F6FFE100B103C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8930C46727F6FFE100B103C5 /* Assets.xcassets */; };
 		8930C46B27F6FFE200B103C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8930C46A27F6FFE200B103C5 /* Preview Assets.xcassets */; };
 		8930C47327F7045600B103C5 /* SiteTouristiqueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8930C47227F7045600B103C5 /* SiteTouristiqueModel.swift */; };
-		8930C47527F7077100B103C5 /* SiteListeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8930C47427F7077100B103C5 /* SiteListeView.swift */; };
-		89DFA93F280037AE00D3D6DA /* SiteTouristiqueModel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DFA93E280037AE00D3D6DA /* SiteTouristiqueModel2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37F3C94B28003F4B00BA9878 /* GuideVoyagesPierricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideVoyagesPierricView.swift; sourceTree = "<group>"; };
+		37F3C94D28003F9400BA9878 /* SitesFranceDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitesFranceDetailsView.swift; sourceTree = "<group>"; };
+		37F3C94F28003FC000BA9878 /* SitesItalieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitesItalieDetailsView.swift; sourceTree = "<group>"; };
+		37F3C95128003FEE00BA9878 /* SitesUKDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitesUKDetailsView.swift; sourceTree = "<group>"; };
+		37F3C9532800401A00BA9878 /* SitesUSADetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitesUSADetailsView.swift; sourceTree = "<group>"; };
 		8930C46027F6FFDE00B103C5 /* liste_live1avril2022.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = liste_live1avril2022.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8930C46327F6FFDE00B103C5 /* liste_live1avril2022App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = liste_live1avril2022App.swift; sourceTree = "<group>"; };
 		8930C46527F6FFDE00B103C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8930C46727F6FFE100B103C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8930C46A27F6FFE200B103C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8930C47227F7045600B103C5 /* SiteTouristiqueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteTouristiqueModel.swift; sourceTree = "<group>"; };
-		8930C47427F7077100B103C5 /* SiteListeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteListeView.swift; sourceTree = "<group>"; };
-		89DFA93E280037AE00D3D6DA /* SiteTouristiqueModel2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteTouristiqueModel2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +44,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37F3C94A28003EF900BA9878 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				37F3C9552800415900BA9878 /* Main */,
+				37F3C9562800416500BA9878 /* DetailsView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		37F3C9552800415900BA9878 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8930C46527F6FFDE00B103C5 /* ContentView.swift */,
+				37F3C94B28003F4B00BA9878 /* GuideVoyagesPierricView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		37F3C9562800416500BA9878 /* DetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				37F3C94D28003F9400BA9878 /* SitesFranceDetailsView.swift */,
+				37F3C94F28003FC000BA9878 /* SitesItalieDetailsView.swift */,
+				37F3C95128003FEE00BA9878 /* SitesUKDetailsView.swift */,
+				37F3C9532800401A00BA9878 /* SitesUSADetailsView.swift */,
+			);
+			path = DetailsView;
+			sourceTree = "<group>";
+		};
 		8930C45727F6FFDD00B103C5 = {
 			isa = PBXGroup;
 			children = (
@@ -57,10 +92,9 @@
 		8930C46227F6FFDE00B103C5 /* liste_live1avril2022 */ = {
 			isa = PBXGroup;
 			children = (
-				8930C47127F7040300B103C5 /* Model */,
 				8930C46327F6FFDE00B103C5 /* liste_live1avril2022App.swift */,
-				8930C46527F6FFDE00B103C5 /* ContentView.swift */,
-				8930C47427F7077100B103C5 /* SiteListeView.swift */,
+				8930C47127F7040300B103C5 /* Model */,
+				37F3C94A28003EF900BA9878 /* View */,
 				8930C46727F6FFE100B103C5 /* Assets.xcassets */,
 				8930C46927F6FFE200B103C5 /* Preview Content */,
 			);
@@ -79,7 +113,6 @@
 			isa = PBXGroup;
 			children = (
 				8930C47227F7045600B103C5 /* SiteTouristiqueModel.swift */,
-				89DFA93E280037AE00D3D6DA /* SiteTouristiqueModel2.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -154,11 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89DFA93F280037AE00D3D6DA /* SiteTouristiqueModel2.swift in Sources */,
 				8930C46627F6FFDE00B103C5 /* ContentView.swift in Sources */,
+				37F3C94C28003F4B00BA9878 /* GuideVoyagesPierricView.swift in Sources */,
 				8930C47327F7045600B103C5 /* SiteTouristiqueModel.swift in Sources */,
+				37F3C95228003FEE00BA9878 /* SitesUKDetailsView.swift in Sources */,
+				37F3C94E28003F9400BA9878 /* SitesFranceDetailsView.swift in Sources */,
+				37F3C95028003FC000BA9878 /* SitesItalieDetailsView.swift in Sources */,
+				37F3C9542800401A00BA9878 /* SitesUSADetailsView.swift in Sources */,
 				8930C46427F6FFDE00B103C5 /* liste_live1avril2022App.swift in Sources */,
-				8930C47527F7077100B103C5 /* SiteListeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

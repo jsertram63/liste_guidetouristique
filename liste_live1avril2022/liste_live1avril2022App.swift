@@ -11,7 +11,7 @@ import SwiftUI
 struct liste_live1avril2022App: App {
     var body: some Scene {
         WindowGroup {
-            SiteListeView()
+            ContentView()
         }
     }
 }
