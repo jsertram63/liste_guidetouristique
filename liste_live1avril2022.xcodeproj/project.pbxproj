@@ -13,6 +13,7 @@
 		8930C46B27F6FFE200B103C5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8930C46A27F6FFE200B103C5 /* Preview Assets.xcassets */; };
 		8930C47327F7045600B103C5 /* SiteTouristiqueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8930C47227F7045600B103C5 /* SiteTouristiqueModel.swift */; };
 		8930C47527F7077100B103C5 /* SiteListeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8930C47427F7077100B103C5 /* SiteListeView.swift */; };
+		89DFA93F280037AE00D3D6DA /* SiteTouristiqueModel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DFA93E280037AE00D3D6DA /* SiteTouristiqueModel2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		8930C46A27F6FFE200B103C5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8930C47227F7045600B103C5 /* SiteTouristiqueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteTouristiqueModel.swift; sourceTree = "<group>"; };
 		8930C47427F7077100B103C5 /* SiteListeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteListeView.swift; sourceTree = "<group>"; };
+		89DFA93E280037AE00D3D6DA /* SiteTouristiqueModel2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteTouristiqueModel2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				8930C47227F7045600B103C5 /* SiteTouristiqueModel.swift */,
+				89DFA93E280037AE00D3D6DA /* SiteTouristiqueModel2.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89DFA93F280037AE00D3D6DA /* SiteTouristiqueModel2.swift in Sources */,
 				8930C46627F6FFDE00B103C5 /* ContentView.swift in Sources */,
 				8930C47327F7045600B103C5 /* SiteTouristiqueModel.swift in Sources */,
 				8930C46427F6FFDE00B103C5 /* liste_live1avril2022App.swift in Sources */,

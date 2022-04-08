@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SiteListeView: View {
     
-    var sites = siteData
+    var sites = siteData2
     
 
     
