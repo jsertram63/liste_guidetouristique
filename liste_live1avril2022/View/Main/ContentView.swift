@@ -1,3 +1,4 @@
+
 //
 //  ContentView.swift
 //  liste_live1avril2022
@@ -14,10 +15,10 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
-            SiteListeView()
+            SiteListeView(listeLieux: SitesDatasModel.sitesDatas)
                 .tabItem {
                     Image(systemName: "globe.europe.africa.fill")
-                    Text("Guide")
+                    Text("Lieux insolites")
                 }
             
             GuideVoyagePierricView(

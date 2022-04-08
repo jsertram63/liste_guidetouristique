@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37ABF5212800B91100429C67 /* SiteTouristiqueModel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ABF5202800B91100429C67 /* SiteTouristiqueModel2.swift */; };
 		37F3C94C28003F4B00BA9878 /* GuideVoyagesPierricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3C94B28003F4B00BA9878 /* GuideVoyagesPierricView.swift */; };
 		37F3C94E28003F9400BA9878 /* SitesFranceDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3C94D28003F9400BA9878 /* SitesFranceDetailsView.swift */; };
 		37F3C95028003FC000BA9878 /* SitesItalieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3C94F28003FC000BA9878 /* SitesItalieDetailsView.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37ABF5202800B91100429C67 /* SiteTouristiqueModel2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteTouristiqueModel2.swift; sourceTree = "<group>"; };
 		37F3C94B28003F4B00BA9878 /* GuideVoyagesPierricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideVoyagesPierricView.swift; sourceTree = "<group>"; };
 		37F3C94D28003F9400BA9878 /* SitesFranceDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitesFranceDetailsView.swift; sourceTree = "<group>"; };
 		37F3C94F28003FC000BA9878 /* SitesItalieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitesItalieDetailsView.swift; sourceTree = "<group>"; };
@@ -59,8 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				8930C46527F6FFDE00B103C5 /* ContentView.swift */,
-				37F3C94B28003F4B00BA9878 /* GuideVoyagesPierricView.swift */,
 				37F3C9572800438700BA9878 /* SiteListeView.swift */,
+				37F3C94B28003F4B00BA9878 /* GuideVoyagesPierricView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				8930C47227F7045600B103C5 /* SiteTouristiqueModel.swift */,
+				37ABF5202800B91100429C67 /* SiteTouristiqueModel2.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37ABF5212800B91100429C67 /* SiteTouristiqueModel2.swift in Sources */,
 				8930C46627F6FFDE00B103C5 /* ContentView.swift in Sources */,
 				37F3C94C28003F4B00BA9878 /* GuideVoyagesPierricView.swift in Sources */,
 				8930C47327F7045600B103C5 /* SiteTouristiqueModel.swift in Sources */,
