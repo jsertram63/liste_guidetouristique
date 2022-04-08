@@ -8,13 +8,31 @@
 import SwiftUI
 
 struct SiteListeView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    
+    var sites = siteData2
+    
 
-struct SiteListeView_Previews: PreviewProvider {
-    static var previews: some View {
-        SiteListeView()
+    
+    var body: some View {
+        List(sites){ siteCourant in
+            HStack {
+                Image(siteCourant.nomImageSite)
+                    .resizable()
+                    .aspectRatio( contentMode: .fit)
+                    .frame(width: 50, height: 50)
+                VStack{
+                    Text(siteCourant.titre)
+                    Text(siteCourant.pays)
+                }
+                Spacer()
+                Image(siteCourant.pays)
+                    .resizable()
+                    .aspectRatio( contentMode: .fit)
+                    .frame(width: 50, height: 50)
+                
+            }
+            
+        }
+        .listStyle(.plain)
     }
 }
