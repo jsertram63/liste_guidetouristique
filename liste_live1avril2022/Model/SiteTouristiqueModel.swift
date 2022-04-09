@@ -82,7 +82,7 @@ extension SiteTouristiqueModel {
         ),
         SiteTouristiqueModel(
             lieux: "Les Cornouilles",
-            imageSites: "cornouilles",
+            imageSites: "cornouailles",
             link: "https://fr.wikipedia.org/wiki/Cornouailles",
             coordonnes: CLLocationCoordinate2D(latitude: 50.416667, longitude: -4.75)
         ),

@@ -9,10 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     
-    init() {
-        UITabBar.appearance().backgroundColor = UIColor.systemGray5
-    }
-    
     var body: some View {
         TabView {
             SiteListeView(listeLieux: SitesDatasModel.sitesDatas)
