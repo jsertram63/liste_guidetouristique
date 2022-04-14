@@ -67,7 +67,7 @@ extension SiteTouristiqueModel {
         ),
         SiteTouristiqueModel(
             lieux: "La Scala Dei Turchi",
-            imageSites: "sclaDeiTurch",
+            imageSites: "scalaDeiTurchi",
             link: "https://fr.wikipedia.org/wiki/Scala_dei_Turchi",
             coordonnes: CLLocationCoordinate2D(latitude: 37.2899023, longitude: 13.4727541))
     ]
