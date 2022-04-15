@@ -11,21 +11,10 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
-            SiteListeView(listeLieux: SitesDatasModel.sitesDatas)
+            SiteListeView(listeSites: SitesTouristiqueModel.listeSitesTouristiques)
                 .tabItem {
                     Image(systemName: "globe.europe.africa.fill")
                     Text("Lieux insolites")
-                }
-            
-            GuideVoyagePierricView(
-                listeSitesFrance: SiteTouristiqueModel.listeSitesFrance,
-                listeSitesItalie: SiteTouristiqueModel.listeSitesItalie,
-                listeSitesUK: SiteTouristiqueModel.listeSitesUK,
-                listeSitesUSA: SiteTouristiqueModel.listeStitesUSA
-            )
-                .tabItem {
-                    Image(systemName: "airplane.departure")
-                    Text("Guide Pierric")
                 }
         }
     }

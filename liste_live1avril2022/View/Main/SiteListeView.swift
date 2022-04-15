@@ -9,36 +9,40 @@ import SwiftUI
 
 struct SiteListeView: View {
     
-    var listeLieux: [SitesDatasModel]
+    var listeSites: [CategoriesModel]
     
     var body: some View {
-        List(listeLieux) { liste in
-            HStack(alignment: .center, spacing: 15.0) {
-                Image(liste.imageLieux)
-                    .resizable()
-                    .frame(width: 50.0, height: 50.0)
-                    .cornerRadius(5)
-                    .shadow(radius: 3)
-                
-                VStack(alignment: .leading, spacing: 5.0) {
-                    Text(liste.nomSite)
-                    Text(liste.pays)
+        NavigationView {
+            List {
+                ForEach(listeSites) { listeSite in
+                    Section(
+                        header: Text("\(listeSite.pays)")
+                            .font(.title)
+                            .fontWeight(.bold)
+                    ) {
+                        ForEach(listeSite.sitesTouristiques) { siteTouristique in
+                            HStack(alignment: .center, spacing: 15.0) {
+                                Image(siteTouristique.imageSites)
+                                    .resizable()
+                                    .frame(width: 75, height: 75)
+                                    .cornerRadius(10)
+                                    .shadow(color: .black.opacity(0.5), radius: 5, x: 0, y: 0)
+                                
+                                Text(siteTouristique.lieux)
+                            }
+                            .padding(.vertical, 5.0)
+                        }
+                    }
                 }
-                
-                Spacer()
-                
-                Image(liste.imageDrapeau)
-                    .resizable()
-                    .frame(width: 25.0, height: 25.0)
             }
-            .padding(/*@START_MENU_TOKEN@*/.vertical, 5.0/*@END_MENU_TOKEN@*/)
+            .listStyle(PlainListStyle())
+            .navigationTitle("Guide Touristique 🌍")
         }
-        .listStyle(PlainListStyle())
     }
 }
 
 struct SiteListeView_Previews: PreviewProvider {
     static var previews: some View {
-        SiteListeView(listeLieux: SitesDatasModel.sitesDatas)
+        SiteListeView(listeSites: SitesTouristiqueModel.listeSitesTouristiques)
     }
 }
