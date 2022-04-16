@@ -10,18 +10,19 @@ import MapKit
 
 struct DetailsView: View {
     // Création du propriété afin d'initialiser la vue Map()
-    @State private var region = MKCoordinateRegion(
-        center: CLLocationCoordinate2D(latitude: 48.6359541, longitude: -1.51146),
-        span: MKCoordinateSpan(latitudeDelta: 0.15, longitudeDelta: 0.15)
-    )
+    //@State private var region =
     
     var lieuxDetails: CategoriesModel
     
     var body: some View {
         VStack {
             // Vue Map
-            Map(coordinateRegion: $region)
-                .frame(height: 300)
+            Map(coordinateRegion: .constant(
+                MKCoordinateRegion(
+                    center: lieuxDetails.sitesTouristiques[0].coordonnes,
+                    span: MKCoordinateSpan(latitudeDelta: 0.15, longitudeDelta: 0.15)))
+            )
+            .frame(height: 300)
             
             Image(lieuxDetails.sitesTouristiques[0].imageSites)
                 .resizable()
@@ -42,7 +43,7 @@ struct DetailsView: View {
                 Spacer()
                 
                 Link("Wikipedia", destination: URL(string: lieuxDetails.sitesTouristiques[0].link)!)
-
+                
             }
             .padding()
             
