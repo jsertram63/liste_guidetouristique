@@ -9,17 +9,21 @@ import SwiftUI
 import MapKit
 
 struct DetailsView: View {
+    // Création du propriété afin d'initialiser la vue Map()
     @State private var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: 48.6359541, longitude: -1.51146),
         span: MKCoordinateSpan(latitudeDelta: 0.15, longitudeDelta: 0.15)
     )
     
+    var lieuxDetails: CategoriesModel
+    
     var body: some View {
         VStack {
+            // Vue Map
             Map(coordinateRegion: $region)
                 .frame(height: 300)
             
-            Image("montSaintMichel")
+            Image(lieuxDetails.sitesTouristiques[0].imageSites)
                 .resizable()
                 .frame(width: 150.0, height: 150.0)
                 .clipShape(Circle())
@@ -31,13 +35,14 @@ struct DetailsView: View {
                 .padding(.bottom, -75)
             
             HStack(alignment: .center) {
-                Text("Mont Saint Michel")
+                Text(lieuxDetails.sitesTouristiques[0].lieux)
                     .font(.title)
                     .fontWeight(.bold)
                 
                 Spacer()
                 
-                Text("Wikipedia")
+                Link("Wikipedia", destination: URL(string: lieuxDetails.sitesTouristiques[0].link)!)
+
             }
             .padding()
             
@@ -49,6 +54,6 @@ struct DetailsView: View {
 
 struct DetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailsView()
+        DetailsView(lieuxDetails: SitesTouristiqueModel.listeSitesTouristiques.first!)
     }
 }

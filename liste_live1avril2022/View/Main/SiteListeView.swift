@@ -21,28 +21,33 @@ struct SiteListeView: View {
                             .fontWeight(.bold)
                     ) {
                         ForEach(listeSite.sitesTouristiques) { siteTouristique in
-                            HStack(alignment: .center, spacing: 15.0) {
-                                Image(siteTouristique.imageSites)
-                                    .resizable()
-                                    .frame(width: 75, height: 75)
-                                    .cornerRadius(10)
-                                    .shadow(color: .black.opacity(0.5), radius: 5, x: 0, y: 0)
-                                
-                                Text(siteTouristique.lieux)
+                            NavigationLink {
+                                // DetailsView(lieuxDetails: )
+                            } label: {
+                                HStack(alignment: .center, spacing: 15.0) {
+                                    Image(siteTouristique.imageSites)
+                                        .resizable()
+                                        .frame(width: 75, height: 75)
+                                        .cornerRadius(10)
+                                        .shadow(color: .black.opacity(0.5), radius: 5, x: 0, y: 0)
+                                    
+                                    Text(siteTouristique.lieux)
+                                }
+                                .padding(.vertical, 5.0)
                             }
-                            .padding(.vertical, 5.0)
+                            
                         }
                     }
                 }
+                .listStyle(GroupedListStyle())
+                .navigationTitle("Guide Touristique 🌍")
             }
-            .listStyle(PlainListStyle())
-            .navigationTitle("Guide Touristique 🌍")
         }
     }
-}
-
-struct SiteListeView_Previews: PreviewProvider {
-    static var previews: some View {
-        SiteListeView(listeSites: SitesTouristiqueModel.listeSitesTouristiques)
+    
+    struct SiteListeView_Previews: PreviewProvider {
+        static var previews: some View {
+            SiteListeView(listeSites: SitesTouristiqueModel.listeSitesTouristiques)
+        }
     }
 }
