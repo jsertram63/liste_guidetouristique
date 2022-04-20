@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		374D426328080FD200FBAE5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 374D426228080FD200FBAE5F /* LaunchScreen.storyboard */; };
+		37A6C8B428106225003E477B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A6C8B328106225003E477B /* DetailView.swift */; };
 		37F3C9582800438700BA9878 /* SiteListeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3C9572800438700BA9878 /* SiteListeView.swift */; };
 		8930C46427F6FFDE00B103C5 /* liste_live1avril2022App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8930C46327F6FFDE00B103C5 /* liste_live1avril2022App.swift */; };
 		8930C46627F6FFDE00B103C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8930C46527F6FFDE00B103C5 /* ContentView.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		374D426228080FD200FBAE5F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		37A6C8B328106225003E477B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		37F3C9572800438700BA9878 /* SiteListeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteListeView.swift; sourceTree = "<group>"; };
 		8930C46027F6FFDE00B103C5 /* liste_live1avril2022.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = liste_live1avril2022.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8930C46327F6FFDE00B103C5 /* liste_live1avril2022App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = liste_live1avril2022App.swift; sourceTree = "<group>"; };
@@ -41,6 +43,7 @@
 		3777E397280B27B50040887B /* DetailsView */ = {
 			isa = PBXGroup;
 			children = (
+				37A6C8B328106225003E477B /* DetailView.swift */,
 			);
 			path = DetailsView;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				8930C46627F6FFDE00B103C5 /* ContentView.swift in Sources */,
 				8930C47327F7045600B103C5 /* SiteTouristiqueModel.swift in Sources */,
 				37F3C9582800438700BA9878 /* SiteListeView.swift in Sources */,
+				37A6C8B428106225003E477B /* DetailView.swift in Sources */,
 				8930C46427F6FFDE00B103C5 /* liste_live1avril2022App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
