@@ -22,7 +22,7 @@ struct SiteListeView: View {
                     ) {
                         ForEach(listeSite.sitesTouristiques) { siteTouristique in
                             NavigationLink {
-                                //DetailsView()
+                               // DetailsView(lieuxDetails: )
                             } label: {
                                 HStack(alignment: .center, spacing: 15.0) {
                                     Image(siteTouristique.imageSites)
