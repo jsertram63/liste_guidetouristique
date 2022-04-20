@@ -9,8 +9,6 @@ import SwiftUI
 import MapKit
 
 struct DetailsView: View {
-    // Création du propriété afin d'initialiser la vue Map()
-    //@State private var region =
     
     var lieuxDetails: CategoriesModel
     
