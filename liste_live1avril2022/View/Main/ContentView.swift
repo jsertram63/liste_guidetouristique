@@ -1,3 +1,4 @@
+
 //
 //  ContentView.swift
 //  liste_live1avril2022
@@ -8,27 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     
-    init() {
-        UITabBar.appearance().backgroundColor = UIColor.systemGray5
-    }
-    
     var body: some View {
         TabView {
-            SiteListeView()
+            SiteListeView(listeSites: SitesTouristiqueModel.listeSitesTouristiques)
                 .tabItem {
-                    Image("globe.europe.africa.fill")
-                    Text("Guide")
-                }
-            
-            GuideVoyagePierricView(
-                listeSitesFrance: SiteTouristiqueModel.listeSitesFrance,
-                listeSitesItalie: SiteTouristiqueModel.listeSitesItalie,
-                listeSitesUK: SiteTouristiqueModel.listeSitesUK,
-                listeSitesUSA: SiteTouristiqueModel.listeStitesUSA
-            )
-                .tabItem {
-                    Image(systemName: "airplane.departure")
-                    Text("Guide Pierric")
+                    Image(systemName: "globe.europe.africa.fill")
+                    Text("Lieux insolites")
                 }
         }
     }

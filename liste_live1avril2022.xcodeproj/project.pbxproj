@@ -7,11 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37F3C94C28003F4B00BA9878 /* GuideVoyagesPierricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3C94B28003F4B00BA9878 /* GuideVoyagesPierricView.swift */; };
-		37F3C94E28003F9400BA9878 /* SitesFranceDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3C94D28003F9400BA9878 /* SitesFranceDetailsView.swift */; };
-		37F3C95028003FC000BA9878 /* SitesItalieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3C94F28003FC000BA9878 /* SitesItalieDetailsView.swift */; };
-		37F3C95228003FEE00BA9878 /* SitesUKDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3C95128003FEE00BA9878 /* SitesUKDetailsView.swift */; };
-		37F3C9542800401A00BA9878 /* SitesUSADetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3C9532800401A00BA9878 /* SitesUSADetailsView.swift */; };
+		374D426328080FD200FBAE5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 374D426228080FD200FBAE5F /* LaunchScreen.storyboard */; };
+		37A6C8B428106225003E477B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A6C8B328106225003E477B /* DetailView.swift */; };
 		37F3C9582800438700BA9878 /* SiteListeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3C9572800438700BA9878 /* SiteListeView.swift */; };
 		8930C46427F6FFDE00B103C5 /* liste_live1avril2022App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8930C46327F6FFDE00B103C5 /* liste_live1avril2022App.swift */; };
 		8930C46627F6FFDE00B103C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8930C46527F6FFDE00B103C5 /* ContentView.swift */; };
@@ -22,11 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		37F3C94B28003F4B00BA9878 /* GuideVoyagesPierricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideVoyagesPierricView.swift; sourceTree = "<group>"; };
-		37F3C94D28003F9400BA9878 /* SitesFranceDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitesFranceDetailsView.swift; sourceTree = "<group>"; };
-		37F3C94F28003FC000BA9878 /* SitesItalieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitesItalieDetailsView.swift; sourceTree = "<group>"; };
-		37F3C95128003FEE00BA9878 /* SitesUKDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitesUKDetailsView.swift; sourceTree = "<group>"; };
-		37F3C9532800401A00BA9878 /* SitesUSADetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitesUSADetailsView.swift; sourceTree = "<group>"; };
+		374D426228080FD200FBAE5F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		37A6C8B328106225003E477B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		37F3C9572800438700BA9878 /* SiteListeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteListeView.swift; sourceTree = "<group>"; };
 		8930C46027F6FFDE00B103C5 /* liste_live1avril2022.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = liste_live1avril2022.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8930C46327F6FFDE00B103C5 /* liste_live1avril2022App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = liste_live1avril2022App.swift; sourceTree = "<group>"; };
@@ -48,11 +42,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3777E397280B27B50040887B /* DetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				37A6C8B328106225003E477B /* DetailView.swift */,
+			);
+			path = DetailsView;
+			sourceTree = "<group>";
+		};
 		37F3C94A28003EF900BA9878 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				37F3C9552800415900BA9878 /* Main */,
-				37F3C9562800416500BA9878 /* DetailsView */,
+				3777E397280B27B50040887B /* DetailsView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -61,21 +63,10 @@
 			isa = PBXGroup;
 			children = (
 				8930C46527F6FFDE00B103C5 /* ContentView.swift */,
-				37F3C94B28003F4B00BA9878 /* GuideVoyagesPierricView.swift */,
 				37F3C9572800438700BA9878 /* SiteListeView.swift */,
+				374D426228080FD200FBAE5F /* LaunchScreen.storyboard */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		37F3C9562800416500BA9878 /* DetailsView */ = {
-			isa = PBXGroup;
-			children = (
-				37F3C94D28003F9400BA9878 /* SitesFranceDetailsView.swift */,
-				37F3C94F28003FC000BA9878 /* SitesItalieDetailsView.swift */,
-				37F3C95128003FEE00BA9878 /* SitesUKDetailsView.swift */,
-				37F3C9532800401A00BA9878 /* SitesUSADetailsView.swift */,
-			);
-			path = DetailsView;
 			sourceTree = "<group>";
 		};
 		8930C45727F6FFDD00B103C5 = {
@@ -181,6 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				374D426328080FD200FBAE5F /* LaunchScreen.storyboard in Resources */,
 				8930C46B27F6FFE200B103C5 /* Preview Assets.xcassets in Resources */,
 				8930C46827F6FFE100B103C5 /* Assets.xcassets in Resources */,
 			);
@@ -195,13 +187,9 @@
 			files = (
 				89DFA9412800446000D3D6DA /* SiteTouristiqueModel2.swift in Sources */,
 				8930C46627F6FFDE00B103C5 /* ContentView.swift in Sources */,
-				37F3C94C28003F4B00BA9878 /* GuideVoyagesPierricView.swift in Sources */,
 				8930C47327F7045600B103C5 /* SiteTouristiqueModel.swift in Sources */,
-				37F3C95228003FEE00BA9878 /* SitesUKDetailsView.swift in Sources */,
-				37F3C94E28003F9400BA9878 /* SitesFranceDetailsView.swift in Sources */,
 				37F3C9582800438700BA9878 /* SiteListeView.swift in Sources */,
-				37F3C95028003FC000BA9878 /* SitesItalieDetailsView.swift in Sources */,
-				37F3C9542800401A00BA9878 /* SitesUSADetailsView.swift in Sources */,
+				37A6C8B428106225003E477B /* DetailView.swift in Sources */,
 				8930C46427F6FFDE00B103C5 /* liste_live1avril2022App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +327,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -368,6 +357,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
