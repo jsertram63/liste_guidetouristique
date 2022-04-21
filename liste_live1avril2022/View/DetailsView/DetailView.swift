@@ -51,8 +51,8 @@ struct DetailView: View {
 
 }
 
-//struct DetailView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        DetailView(lieuxDetails: SitesTouristiqueModel.)
-//    }
-//}
+struct DetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        DetailView(lieuxDetails: listeSitesTouristiques.first!.sitesTouristiques.first!)
+    }
+}
