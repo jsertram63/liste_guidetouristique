@@ -37,7 +37,7 @@ let listeSitesTouristiques: [CategoriesModel] = [
                 lieux: "Les Pyrénées",
                 imageSites: "Pyrenees",
                 link: "https://fr.wikipedia.org/wiki/Pyr%C3%A9n%C3%A9es",
-                coordonnes: CLLocationCoordinate2D(latitude: 42.6982487, longitude: 0.4969969)
+                coordonnes: CLLocationCoordinate2D(latitude: 42.519901, longitude: 2.45804)
             ),
             SitesTouristiqueModel(
                 lieux: "La Tour Eiffel",
