@@ -22,7 +22,7 @@ struct SiteListeView: View {
                     ) {
                         ForEach(listeSite.sitesTouristiques) { siteTouristique in
                             NavigationLink {
-                               // DetailsView(lieuxDetails: )
+                                DetailView(lieuxDetails: siteTouristique)
                             } label: {
                                 HStack(alignment: .center, spacing: 15.0) {
                                     Image(siteTouristique.imageSites)
@@ -35,7 +35,6 @@ struct SiteListeView: View {
                                 }
                                 .padding(.vertical, 5.0)
                             }
-                            
                         }
                     }
                 }
@@ -47,7 +46,7 @@ struct SiteListeView: View {
     
     struct SiteListeView_Previews: PreviewProvider {
         static var previews: some View {
-            SiteListeView(listeSites: SitesTouristiqueModel.listeSitesTouristiques)
+            SiteListeView(listeSites: listeSitesTouristiques)
         }
     }
 }

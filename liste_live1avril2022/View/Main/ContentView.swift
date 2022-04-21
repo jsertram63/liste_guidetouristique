@@ -11,7 +11,7 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
-            SiteListeView(listeSites: SitesTouristiqueModel.listeSitesTouristiques)
+            SiteListeView(listeSites: listeSitesTouristiques)
                 .tabItem {
                     Image(systemName: "globe.europe.africa.fill")
                     Text("Lieux insolites")
