@@ -38,9 +38,9 @@ struct SiteListeView: View {
                         }
                     }
                 }
-                .listStyle(GroupedListStyle())
                 .navigationTitle("Guide Touristique 🌍")
             }
+            .listStyle(GroupedListStyle())
         }
     }
     
