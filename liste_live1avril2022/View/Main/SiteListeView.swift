@@ -20,10 +20,15 @@ struct SiteListeView: View {
                             .font(.title)
                             .fontWeight(.bold)
                     ) {
+                        // listeSite fait référence listeSite de type [CategorieModel]
+                        // qui contient la propriété de type SiteTouristiqueModel
+                        
                         ForEach(listeSite.sitesTouristiques) { siteTouristique in
                             NavigationLink {
                                 DetailView(lieuxDetails: siteTouristique)
-                            } label: {
+                            }
+                        
+                            label: {
                                 HStack(alignment: .center, spacing: 15.0) {
                                     Image(siteTouristique.imageSites)
                                         .resizable()
@@ -32,6 +37,13 @@ struct SiteListeView: View {
                                         .shadow(color: .black.opacity(0.5), radius: 5, x: 0, y: 0)
                                     
                                     Text(siteTouristique.lieux)
+                                    Spacer()
+                                    Image(systemName: "heart")
+                                        .onTapGesture {
+                                            print("mise en favori")
+                                        }
+                                    
+                                
                                 }
                                 .padding(.vertical, 5.0)
                             }
