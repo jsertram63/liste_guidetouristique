@@ -21,7 +21,6 @@ struct SitesTouristiqueModel: Identifiable {
     var coordonnes: CLLocationCoordinate2D
 }
 
-
 let listeSitesTouristiques: [CategoriesModel] = [
     // Constructeur France
     CategoriesModel(

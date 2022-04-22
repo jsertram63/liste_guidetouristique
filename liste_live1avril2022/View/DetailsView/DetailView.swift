@@ -19,6 +19,7 @@ struct DetailView: View {
                         center: lieuxDetails.coordonnes,
                         span: MKCoordinateSpan(latitudeDelta: 0.10, longitudeDelta: 0.10)))
                 )
+                .allowsHitTesting(false) // fige la carte
                 .frame(height: 400)
                 
                 Image(lieuxDetails.imageSites)
