@@ -17,12 +17,12 @@ struct SitesTouristiqueModel: Identifiable {
     let id = UUID()
     var lieux: String
     var imageSites: String
-    var favorite:Bool
+    var favorite: Bool
     var link: String
     var coordonnes: CLLocationCoordinate2D
 }
 
-let listeSitesTouristiques: [CategoriesModel] = [
+var listeSitesTouristiques: [CategoriesModel] = [
     // Constructeur France
     CategoriesModel(
         pays: "France 🇫🇷",

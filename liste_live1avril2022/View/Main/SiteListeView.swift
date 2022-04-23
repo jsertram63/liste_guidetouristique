@@ -11,6 +11,8 @@ struct SiteListeView: View {
     
     var listeSites: [CategoriesModel]
     
+    @State var triFavoris = false
+    
     var body: some View {
         NavigationView {
             List {
@@ -37,22 +39,36 @@ struct SiteListeView: View {
                                         .shadow(color: .black.opacity(0.5), radius: 5, x: 0, y: 0)
                                     
                                     Text(siteTouristique.lieux)
-                                    Spacer()
                                     Image(systemName: "heart")
                                         .onTapGesture {
                                             print("mise en favori")
                                         }
-                                    
-                                
                                 }
                                 .padding(.vertical, 5.0)
                             }
                         }
                     }
                 }
-                .navigationTitle("Guide Touristique 🌍")
             }
+            // Donne le style de liste
             .listStyle(GroupedListStyle())
+            // Donne un titre à la navigationView
+            .navigationTitle("Guide Touristique 🌍")
+            // Permet d'ajouter des vues textes, images, ... intégrées dans la navigationTitle
+            .navigationBarItems(
+                leading:
+                    Button(action: {
+                        //
+                    }, label: {
+                        Text("Favoris")
+                    }),
+                
+                trailing: Button(action: {
+                        //
+                    }, label: {
+                        Text("Ajouter")
+                    })
+            )
         }
     }
     
