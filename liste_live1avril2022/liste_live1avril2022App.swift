@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct liste_live1avril2022App: App {
+    
+    @StateObject private var sitesVM = SitesTouristiquesViewModel()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(SitesTouristiquesViewModel())
         }
     }
 }

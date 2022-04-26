@@ -9,11 +9,15 @@ import Foundation
 import MapKit
 import SwiftUI
 
-class SitesTouristiquesViewModel: ObservableObject {
+final class SitesTouristiquesViewModel: ObservableObject {
+    // initialisation de la variable sitesTouristiques
     init() {
-        let sitesTouristiques = SitesDataServices.listeSitesTouristiques
-        self.sitesTouristiques = sitesTouristiques
+        let guide = SitesDataServices.listeSitesTouristiques
+        self.guideTouristique = guide
     }
     
-    @Published var sitesTouristiques: [CategoriesModel]
+    @Published var guideTouristique: [CategoriesModel]
+    @Published var favorisChoisis = false
+    
+    
 }

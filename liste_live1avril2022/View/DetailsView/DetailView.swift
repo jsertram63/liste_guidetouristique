@@ -9,6 +9,8 @@ import SwiftUI
 import MapKit
 
 struct DetailView: View {
+    
+    @EnvironmentObject private var sitesVM: SitesTouristiquesViewModel
     var lieuxDetails: SitesTouristiqueModel
         
         var body: some View {
@@ -20,7 +22,25 @@ struct DetailView: View {
                         span: MKCoordinateSpan(latitudeDelta: 0.10, longitudeDelta: 0.10)))
                 )
                 .allowsHitTesting(false) // fige la carte
-                .frame(height: 400)
+                .frame(height: 350)
+                .overlay(alignment: .topLeading) {
+                    Button {
+                        //
+                    } label: {
+                        if lieuxDetails.favorite {
+                            Image(systemName: "heart.fill")
+                                .resizable()
+                                .frame(width: 25.0, height: 25.0)
+                                .foregroundColor(Color.red)
+                        } else {
+                            Image(systemName: "heart")
+                                .resizable()
+                                .frame(width: 25.0, height: 25.0)
+                        }
+                    }
+                    .padding()
+
+                }
                 
                 Image(lieuxDetails.imageSites)
                     .resizable()
