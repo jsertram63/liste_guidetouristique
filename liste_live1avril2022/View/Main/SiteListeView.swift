@@ -9,22 +9,21 @@ import SwiftUI
 
 struct SiteListeView: View {
     
-    var listeSites: [CategoriesModel]
+    @EnvironmentObject private var sitesVM: SitesTouristiquesViewModel
     
     @State var triFavoris = false
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(listeSites) { listeSite in
+                // listeSite fait référence listeSite de type [CategorieModel]
+                // qui contient la propriété de type SiteTouristiqueModel
+                ForEach(sitesVM.sitesTouristiques) { listeSite in
                     Section(
                         header: Text("\(listeSite.pays)")
                             .font(.title)
                             .fontWeight(.bold)
                     ) {
-                        // listeSite fait référence listeSite de type [CategorieModel]
-                        // qui contient la propriété de type SiteTouristiqueModel
-                        
                         ForEach(listeSite.sitesTouristiques) { siteTouristique in
                             NavigationLink {
                                 DetailView(lieuxDetails: siteTouristique)
@@ -74,7 +73,8 @@ struct SiteListeView: View {
     
     struct SiteListeView_Previews: PreviewProvider {
         static var previews: some View {
-            SiteListeView(listeSites: listeSitesTouristiques)
+            SiteListeView()
+                .environmentObject(SitesTouristiquesViewModel())
         }
     }
 }

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		374D426328080FD200FBAE5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 374D426228080FD200FBAE5F /* LaunchScreen.storyboard */; };
 		37A6C8B428106225003E477B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A6C8B328106225003E477B /* DetailView.swift */; };
+		37C116892818333900C69290 /* SitesDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C116882818333900C69290 /* SitesDataService.swift */; };
+		37C1168C281834F400C69290 /* SitesTouristiquesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C1168B281834F400C69290 /* SitesTouristiquesViewModel.swift */; };
 		37F3C9582800438700BA9878 /* SiteListeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3C9572800438700BA9878 /* SiteListeView.swift */; };
 		8930C46427F6FFDE00B103C5 /* liste_live1avril2022App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8930C46327F6FFDE00B103C5 /* liste_live1avril2022App.swift */; };
 		8930C46627F6FFDE00B103C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8930C46527F6FFDE00B103C5 /* ContentView.swift */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		374D426228080FD200FBAE5F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37A6C8B328106225003E477B /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		37C116882818333900C69290 /* SitesDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitesDataService.swift; sourceTree = "<group>"; };
+		37C1168B281834F400C69290 /* SitesTouristiquesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SitesTouristiquesViewModel.swift; sourceTree = "<group>"; };
 		37F3C9572800438700BA9878 /* SiteListeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteListeView.swift; sourceTree = "<group>"; };
 		8930C46027F6FFDE00B103C5 /* liste_live1avril2022.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = liste_live1avril2022.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8930C46327F6FFDE00B103C5 /* liste_live1avril2022App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = liste_live1avril2022App.swift; sourceTree = "<group>"; };
@@ -48,11 +52,28 @@
 			path = DetailsView;
 			sourceTree = "<group>";
 		};
+		37C11687281832FE00C69290 /* DataServices */ = {
+			isa = PBXGroup;
+			children = (
+				37C116882818333900C69290 /* SitesDataService.swift */,
+			);
+			path = DataServices;
+			sourceTree = "<group>";
+		};
+		37C1168A281834D400C69290 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				37C1168B281834F400C69290 /* SitesTouristiquesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		37F3C94A28003EF900BA9878 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				37F3C9552800415900BA9878 /* Main */,
 				3777E397280B27B50040887B /* DetailsView */,
+				37C1168A281834D400C69290 /* ViewModel */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -87,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				8930C46327F6FFDE00B103C5 /* liste_live1avril2022App.swift */,
+				37C11687281832FE00C69290 /* DataServices */,
 				8930C47127F7040300B103C5 /* Model */,
 				37F3C94A28003EF900BA9878 /* View */,
 				8930C46727F6FFE100B103C5 /* Assets.xcassets */,
@@ -184,8 +206,10 @@
 			files = (
 				8930C46627F6FFDE00B103C5 /* ContentView.swift in Sources */,
 				8930C47327F7045600B103C5 /* SiteTouristiqueModel.swift in Sources */,
+				37C1168C281834F400C69290 /* SitesTouristiquesViewModel.swift in Sources */,
 				37F3C9582800438700BA9878 /* SiteListeView.swift in Sources */,
 				37A6C8B428106225003E477B /* DetailView.swift in Sources */,
+				37C116892818333900C69290 /* SitesDataService.swift in Sources */,
 				8930C46427F6FFDE00B103C5 /* liste_live1avril2022App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

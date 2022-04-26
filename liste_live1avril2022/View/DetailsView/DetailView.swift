@@ -54,6 +54,7 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(lieuxDetails: listeSitesTouristiques.first!.sitesTouristiques.first!)
+        DetailView(lieuxDetails: SitesDataServices.listeSitesTouristiques.first!.sitesTouristiques.first!)
+            .environmentObject(SitesTouristiquesViewModel())
     }
 }

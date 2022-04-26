@@ -11,7 +11,7 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
-            SiteListeView(listeSites: listeSitesTouristiques)
+            SiteListeView()
                 .tabItem {
                     Image(systemName: "globe.europe.africa.fill")
                     Text("Lieux insolites")
@@ -23,5 +23,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(SitesTouristiquesViewModel())
     }
 }
