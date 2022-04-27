@@ -15,55 +15,14 @@ struct DetailView: View {
         
         var body: some View {
             VStack {
-                // Vue Map
-                Map(coordinateRegion: .constant(
-                    MKCoordinateRegion(
-                        center: lieuxDetails.coordonnes,
-                        span: MKCoordinateSpan(latitudeDelta: 0.10, longitudeDelta: 0.10)))
-                )
-                .allowsHitTesting(false) // fige la carte
-                .frame(height: 350)
+                mapView
                 .overlay(alignment: .topLeading) {
-                    Button {
-                        sitesVM.favorisChoisis.toggle()
-                    } label: {
-                        if sitesVM.favorisChoisis {
-                            Image(systemName: "heart.fill")
-                                .resizable()
-                                .frame(width: 25.0, height: 25.0)
-                                .foregroundColor(Color.red)
-                        } else {
-                            Image(systemName: "heart")
-                                .resizable()
-                                .frame(width: 25.0, height: 25.0)
-                        }
-                    }
-                    .padding()
-
+                    boutonFavoris
                 }
                 
-                Image(lieuxDetails.imageSites)
-                    .resizable()
-                    .frame(width: 150.0, height: 150.0)
-                    .clipShape(Circle())
-                    .overlay {
-                        Circle().stroke(.white, lineWidth: 4)
-                    }
-                    .shadow(radius: 7)
-                    .offset(y: -85)
-                    .padding(.bottom, -75)
+                imageSite
                 
-                HStack(alignment: .center) {
-                    Text(lieuxDetails.lieux)
-                        .font(.title)
-                        .fontWeight(.bold)
-                    
-                    Spacer()
-                    
-                    Link("Wikipedia", destination: URL(string: lieuxDetails.link)!)
-                    
-                }
-                .padding()
+                description
                 
                 Spacer()
             }
@@ -76,5 +35,76 @@ struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
         DetailView(lieuxDetails: SitesDataServices.listeSitesTouristiques.first!.sitesTouristiques.first!)
             .environmentObject(SitesTouristiquesViewModel())
+    }
+}
+
+/* *************************************************************************** */
+
+extension DetailView {
+    // Bouton favoris
+    private var boutonFavoris: some View {
+        Button {
+            sitesVM.favorisChoisis.toggle()
+        } label: {
+            if sitesVM.favorisChoisis {
+                Image(systemName: "heart.fill")
+                    .frame(width: 15.0, height: 15.0)
+                    .font(.headline)
+                    .padding(15.0)
+                    .foregroundColor(Color.red)
+                    .background(.thickMaterial)
+                    .cornerRadius(15)
+                    .shadow(color: Color.black.opacity(0.5), radius: 5, x: 0, y: 0)
+            } else {
+                Image(systemName: "heart")
+                    .frame(width: 15.0, height: 15.0)
+                    .font(.headline)
+                    .padding(15.0)
+                    .foregroundColor(Color.brown)
+                    .background(.thickMaterial)
+                    .cornerRadius(15)
+                    .shadow(color: Color.black.opacity(0.5), radius: 5, x: 0, y: 0)
+            }
+        }
+        .padding([.top, .leading], 15.0)
+    }
+    
+    // Vue Map
+    private var mapView: some View {
+        Map(coordinateRegion: .constant(
+            MKCoordinateRegion(
+                center: lieuxDetails.coordonnes,
+                span: MKCoordinateSpan(latitudeDelta: 0.10, longitudeDelta: 0.10)))
+        )
+        .allowsHitTesting(false) // fige la carte
+        .frame(height: 350)
+    }
+    
+    // Image du site
+    private var imageSite: some View {
+        Image(lieuxDetails.imageSites)
+            .resizable()
+            .frame(width: 175.0, height: 175.0)
+            .clipShape(Circle())
+            .overlay {
+                Circle().stroke(.white, lineWidth: 4)
+            }
+            .shadow(radius: 7)
+            .offset(y: -95)
+            .padding(.bottom, -75)
+    }
+    
+    // description
+    private var description: some View {
+        HStack(alignment: .center) {
+            Text(lieuxDetails.lieux)
+                .font(.title)
+                .fontWeight(.bold)
+            
+            Spacer()
+            
+            Link("Wikipedia", destination: URL(string: lieuxDetails.link)!)
+        }
+        .padding()
     }
 }
