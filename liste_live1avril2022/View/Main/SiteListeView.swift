@@ -35,10 +35,22 @@ struct SiteListeView: View {
                             
                             if sitesVM.favorisChoisis {
                                 Image(systemName: "heart.fill")
+                                    .frame(width: 15.0, height: 15.0)
+                                    .font(.headline)
+                                    .padding(10.0)
                                     .foregroundColor(Color.red)
+                                    .background(.thickMaterial)
+                                    .cornerRadius(10)
+                                    .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 0)
                             } else {
                                 Image(systemName: "heart")
+                                    .frame(width: 15.0, height: 15.0)
+                                    .font(.headline)
+                                    .padding(10.0)
                                     .foregroundColor(Color.brown)
+                                    .background(.thickMaterial)
+                                    .cornerRadius(10)
+                                    .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 0)
                             }
                         }
                         .padding(.vertical, 5.0)
