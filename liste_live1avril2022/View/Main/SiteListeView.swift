@@ -13,13 +13,13 @@ struct SiteListeView: View {
     
     var body: some View {
         NavigationView {
-            List(sitesVM.guideTouristique) { listeSite in
+            List(sitesVM.categories) { categorie in
                 Section(
-                    header: Text("\(listeSite.pays)")
+                    header: Text("\(categorie.pays)")
                         .font(.title)
                         .fontWeight(.bold)
                 ) {
-                    ForEach(listeSite.sitesTouristiques) { siteTouristique in
+                    ForEach(categorie.sitesTouristiques) { siteTouristique in
                         NavigationLink {
                             DetailView(lieuxDetails: siteTouristique)
                         }
@@ -33,8 +33,8 @@ struct SiteListeView: View {
                             
                             Text(siteTouristique.lieux)
                             
-                            if siteTouristique.favorite {
-                                Image(systemName: "heart")
+                            if sitesVM.favorisChoisis {
+                                Image(systemName: "heart.fill")
                                     .foregroundColor(Color.red)
                             } else {
                                 Image(systemName: "heart")

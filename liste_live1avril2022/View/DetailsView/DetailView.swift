@@ -25,9 +25,9 @@ struct DetailView: View {
                 .frame(height: 350)
                 .overlay(alignment: .topLeading) {
                     Button {
-                        //
+                        sitesVM.favorisChoisis.toggle()
                     } label: {
-                        if lieuxDetails.favorite {
+                        if sitesVM.favorisChoisis {
                             Image(systemName: "heart.fill")
                                 .resizable()
                                 .frame(width: 25.0, height: 25.0)

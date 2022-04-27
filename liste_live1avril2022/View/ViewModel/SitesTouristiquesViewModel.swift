@@ -12,12 +12,11 @@ import SwiftUI
 final class SitesTouristiquesViewModel: ObservableObject {
     // initialisation de la variable sitesTouristiques
     init() {
-        let guide = SitesDataServices.listeSitesTouristiques
-        self.guideTouristique = guide
+        
+        let categorie = SitesDataServices.listeSitesTouristiques
+        self.categories = categorie
     }
     
-    @Published var guideTouristique: [CategoriesModel]
+    @Published var categories: [CategoriesModel]
     @Published var favorisChoisis = false
-    
-    
 }
