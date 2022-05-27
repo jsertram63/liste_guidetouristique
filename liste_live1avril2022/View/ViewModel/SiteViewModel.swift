@@ -18,12 +18,10 @@ class SiteViewModel: ObservableObject {
 
     @Published private(set) var state = State.idle
     
-    
-    
     @Published var sites: [Site] = []
     @Published var sitesTouriques: Sites?
     
-    
+    // Récupération des données depuis l'API
     func fetchSites(){
         print("FETCH SITES")
         guard let url = URL(string:"http://137.184.217.221/app/site/") else {
@@ -34,6 +32,7 @@ class SiteViewModel: ObservableObject {
                 print("données pas reçus")
                 return
             }
+            
             do {
                 print("avant décodage json")
                 let sites: Sites = try JSONDecoder().decode(Sites.self, from: data)
@@ -43,11 +42,9 @@ class SiteViewModel: ObservableObject {
                 }
             }
             catch {
-            
+            // Attente d'implémentation
             }
         }
         task.resume()
-        
     }
-    
 }

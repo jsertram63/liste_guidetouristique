@@ -9,9 +9,8 @@ import Foundation
 
 
 // MARK: - Site
-
-struct Sites:Codable, Hashable {
-    let sites:[Site]
+struct Sites: Codable, Hashable {
+    let sites: [Site]
 }
 
 struct Site: Codable, Hashable {
