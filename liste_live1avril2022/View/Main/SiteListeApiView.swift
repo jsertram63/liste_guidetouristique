@@ -14,13 +14,36 @@ struct SiteListeApiView: View {
     var body: some View {
         NavigationView {
             List(viewModel.sites, id: \.self ) { site in
-                HStack {
-                    // passage de la vue URLImage construite plus bas qui prend en paramètre
-                    URLImage(urlString: site.photo)
-                    
-                    Text(site.nom)
+                Section(
+                    header: Text("\(site.pays)")
+                        .font(.title3)
+                        .fontWeight(.bold)
+                ) {
+                    NavigationLink {
+                        //
+                    } label: {
+                        HStack(alignment: .center) {
+                            VStack(alignment: .leading) {
+                                HStack(alignment: .center, spacing: 50.0) {
+                                    // passage de la vue URLImage construite plus bas qui prend en paramètre
+                                    URLImage(urlString: site.photo)
+                                    
+                                    Image(systemName: "heart")
+                                        .frame(width: 15.0, height: 15.0)
+                                        .font(.headline)
+                                        .padding(10.0)
+                                        .foregroundColor(Color.brown)
+                                        .background(.thickMaterial)
+                                        .cornerRadius(10)
+                                        .shadow(color: Color.black.opacity(0.2), radius: 2, x: 0, y: 0)
+                                }
+                                
+                                Text(site.nom)
+                            }
+                        }
+                        .padding(.vertical, 10.0)
+                    }
                 }
-                .padding(.vertical, 5.0)
             }
             // Donne le style de liste
             .listStyle(GroupedListStyle())
