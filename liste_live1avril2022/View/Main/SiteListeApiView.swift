@@ -22,24 +22,24 @@ struct SiteListeApiView: View {
                     NavigationLink {
                         //
                     } label: {
-                        HStack(alignment: .center) {
-                            VStack(alignment: .leading) {
-                                HStack(alignment: .center, spacing: 50.0) {
-                                    // passage de la vue URLImage construite plus bas qui prend en paramètre
-                                    URLImage(urlString: site.photo)
-                                    
+                        HStack(alignment: .center, spacing: 10.0) {
+                            // passage de la vue URLImage construite plus bas qui prend en paramètre
+                            URLImage(urlString: site.photo)
+                                .overlay(alignment: .topLeading) {
                                     Image(systemName: "heart")
-                                        .frame(width: 15.0, height: 15.0)
+                                        .frame(width: 10.0, height: 10.0)
                                         .font(.headline)
-                                        .padding(10.0)
+                                        .padding(8.0)
                                         .foregroundColor(Color.brown)
-                                        .background(.thickMaterial)
-                                        .cornerRadius(10)
-                                        .shadow(color: Color.black.opacity(0.2), radius: 2, x: 0, y: 0)
+                                        .background(
+                                            Circle()
+                                                .fill(Color.white)
+                                        )
+                                        .cornerRadius(5)
+                                        .offset(x: -10, y: -10)
                                 }
-                                
-                                Text(site.nom)
-                            }
+                            
+                            Text(site.nom)
                         }
                         .padding(.vertical, 10.0)
                     }
@@ -81,13 +81,13 @@ struct URLImage: View {
         if let data = data, let uiimage = UIImage(data: data){
             Image(uiImage: uiimage)
                 .resizable()
-                .frame(width: 75, height: 50)
+                .frame(width: 100, height: 75)
                 .cornerRadius(10)
                 .shadow(color: .black.opacity(0.5), radius: 3, x: 0, y: 0)
         } else {
             Image(systemName: "photo")
                 .resizable()
-                .frame(width: 75, height: 50)
+                .frame(width: 100, height: 75)
                 .cornerRadius(10)
                 .shadow(color: .black.opacity(0.5), radius: 3, x: 0, y: 0)
                 .onAppear {
