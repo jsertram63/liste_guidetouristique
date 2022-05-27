@@ -16,6 +16,11 @@ struct ContentView: View {
                     Image(systemName: "globe.europe.africa.fill")
                     Text("Lieux insolites")
                 }
+            SiteListeApiView()
+                .tabItem {
+                    Image(systemName: "airplane.departure")
+                    Text("Lieu API")
+                }
         }
     }
 }
