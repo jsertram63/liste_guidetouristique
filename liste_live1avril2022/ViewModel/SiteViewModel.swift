@@ -22,29 +22,29 @@ class SiteViewModel: ObservableObject {
     @Published var sitesTouriques: Sites?
     
     // Récupération des données depuis l'API
-    func fetchSites(){
-        print("FETCH SITES")
+    func fetchSites() {
         guard let url = URL(string:"http://137.184.217.221/app/site/") else {
             return
         }
-        let task = URLSession.shared.dataTask(with: url) {[weak self] data , _, error in
+        
+        let task = URLSession.shared.dataTask(with: url) { [weak self] data, _, error in
             guard let data = data, error == nil else {
                 print("données pas reçus")
                 return
             }
             
             do {
-                print("avant décodage json")
                 let sites: Sites = try JSONDecoder().decode(Sites.self, from: data)
                 DispatchQueue.main.async {
                     self?.sites = sites.sites;
-                    print(sites)
+                    //print(sites)
                 }
             }
             catch {
             // Attente d'implémentation
             }
         }
+        
         task.resume()
     }
 }
