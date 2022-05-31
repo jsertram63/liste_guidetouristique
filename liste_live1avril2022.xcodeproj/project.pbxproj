@@ -80,7 +80,6 @@
 			children = (
 				37F3C9552800415900BA9878 /* Main */,
 				3777E397280B27B50040887B /* DetailsView */,
-				37C1168A281834D400C69290 /* ViewModel */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -119,6 +118,7 @@
 				37C11687281832FE00C69290 /* DataServices */,
 				8930C47127F7040300B103C5 /* Model */,
 				37F3C94A28003EF900BA9878 /* View */,
+				37C1168A281834D400C69290 /* ViewModel */,
 				8930C46727F6FFE100B103C5 /* Assets.xcassets */,
 				8930C46927F6FFE200B103C5 /* Preview Content */,
 			);
