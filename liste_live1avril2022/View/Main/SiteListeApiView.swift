@@ -9,11 +9,11 @@ import SwiftUI
 
 struct SiteListeApiView: View {
     
-    @StateObject var viewModel = SiteViewModel()
+    @StateObject var siteVM = SiteViewModel()
     
     var body: some View {
         NavigationView {
-            List(viewModel.sites, id: \.self ) { site in
+            List(siteVM.sites, id: \.self ) { site in
                 Section(
                     header: Text("\(site.pays)")
                         .font(.title3)
@@ -28,7 +28,7 @@ struct SiteListeApiView: View {
                             AsyncImage(url: URL(string: "\(site.photo)")) { image in
                                 image.resizable()
                             } placeholder: {
-                                Color.brown
+                                ProgressView()
                             }
                             .frame(width: 125, height: 100)
                             .cornerRadius(10)
@@ -72,7 +72,7 @@ struct SiteListeApiView: View {
             )
             // Au chargement utilise la fonction de récupération des données
             .onAppear {
-                viewModel.fetchSites()
+                siteVM.fetchSites()
             }
         }
     }
